@@ -2,6 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QGraphicsScene>
+#include <QGraphicsItem>
+#include <QPixmap>
+#include <QFile>
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QImage>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -17,7 +24,15 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_actionImport_triggered();
+
 private:
-    Ui::MainWindow *ui;
+    Ui::MainWindow* ui;
+    QGraphicsScene* scene = new QGraphicsScene(this);
+    QGraphicsPixmapItem* background;
+    QGraphicsTextItem* title;
+    QGraphicsTextItem* times;
+
 };
 #endif // MAINWINDOW_H
