@@ -22,11 +22,7 @@ A **C++** application built with **Qt** and **CMake** that allows users to **sch
 ---
 
 ## Roadmap
-
-    🔹 Add event notifications/reminders
-
-    🔹 Implement data persistence (save schedules to a file)
-
-    🔹 Support multiple user profiles
-
-    🔹 Enhance UI customization options
+   🔹 Add event notifications/reminders
+   🔹 Implement data persistence (save schedules to a file)
+   🔹 Support multiple user profiles
+   🔹 Enhance UI customization options
