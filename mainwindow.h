@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QGraphicsView>
 #include <QGraphicsScene>
 #include <QGraphicsItem>
 #include <QPixmap>
@@ -29,6 +30,7 @@ private slots:
 
 private:
     Ui::MainWindow* ui;
+    QGraphicsView* graphicsView = new QGraphicsView(this);
     QGraphicsScene* scene = new QGraphicsScene(this);
     QGraphicsPixmapItem* background;
     QGraphicsTextItem* title;

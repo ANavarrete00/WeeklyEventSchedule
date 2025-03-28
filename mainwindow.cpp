@@ -41,4 +41,3 @@ void MainWindow::on_actionImport_triggered()
         }
     }
 }
-
